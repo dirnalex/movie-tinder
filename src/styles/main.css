@@ -1,0 +1,26 @@
+.MovieCard {
+  max-width: 500px;
+  margin: auto; }
+  .MovieCard .scrolledContent {
+    margin-bottom: 50px; }
+    .MovieCard .scrolledContent h1 {
+      text-align: center; }
+    .MovieCard .scrolledContent img {
+      width: 100%; }
+    .MovieCard .scrolledContent p {
+      text-align: justify; }
+  .MovieCard .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    height: 50px; }
+    .MovieCard .footer .ButtonContainer {
+      max-width: 500px;
+      margin: auto;
+      font-size: 32px;
+      display: flex;
+      justify-content: space-between; }
+      .MovieCard .footer .ButtonContainer svg {
+        vertical-align: text-bottom; }

@@ -1,0 +1,37 @@
+$footer-height: 50px;
+$content-max-width: 500px;
+
+.MovieCard {
+  max-width: $content-max-width;
+  margin: auto;
+  .scrolledContent {
+    margin-bottom: $footer-height;
+    h1 {
+      text-align: center;
+    }
+    img {
+      width: 100%;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    height: $footer-height;
+    .ButtonContainer {
+      max-width: $content-max-width;
+      margin: auto;
+      font-size: 32px;
+      display: flex;
+      justify-content: space-between;
+      svg {
+        vertical-align: text-bottom;
+      }
+    }
+  }
+}
