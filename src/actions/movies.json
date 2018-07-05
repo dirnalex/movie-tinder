@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/en/1/11/2001_A_Space_Odyssey_%281968%29.png",
+    "title": "2001: A Space Odyssey",
+    "summary": "2001: A Space Odyssey is a 1968 epic science fiction film produced and directed by Stanley Kubrick. The screenplay was written by Kubrick and Arthur C. Clarke, and was inspired by Clarke's short story \"The Sentinel\". A novel also called 2001: A Space Odyssey, written concurrently with the screenplay, was published soon after the film was released. The film, which follows a voyage to Jupiter with the sentient computer HAL after the discovery of a mysterious black monolith affecting human evolution, deals with themes of existentialism, human evolution, technology, artificial intelligence, and the possibility of the existence of extraterrestrial life. The film is noted for its scientifically accurate depiction of spaceflight, pioneering special effects, and ambiguous imagery. Sound and dialogue are used sparingly and often in place of traditional cinematic and narrative techniques, and the film is famous for employing a number of pieces of classical music, among them Also sprach Zarathustra by Richard Strauss, The Blue Danube by Johann Strauss II, and works by Aram Khachaturian and György Ligeti.",
+    "rating": 8.3
+  },
+  {
+    "id": "2",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/en/d/d4/Stalker_poster.jpg",
+    "title": "Stalker",
+    "summary": "Stalker (Russian: Сталкер, IPA: [ˈstaɫkʲɪr]) is a 1979 Soviet science fiction art film directed by Andrei Tarkovsky with a screenplay written by Boris and Arkady Strugatsky, loosely based on their novel Roadside Picnic (1972). The film combines elements of science fiction with dramatic philosophical and psychological themes.",
+    "rating": 8.1
+  },
+  {
+    "id": "3",
+    "imageURL": "https://upload.wikimedia.org/wikipedia/en/4/4f/Song_of_the_Sea_%282014_film%29_poster.jpg",
+    "title": "Song of the Sea",
+    "summary": "Song of the Sea (Irish: Amhrán na Mara) is a 2014 animated fantasy film directed and co-produced by Tomm Moore, co-produced by Ross Murray, Paul Young, Stephen Roelants, Serge and Marc Ume, Isabelle Truc, Clement Calvet, Jeremie Fajner, Frederik Villumsen, and Claus Toksvig Kjaer, and written by Will Collins from Moore's story. It was an international co-production from Ireland, Belgium, Denmark, France, and Luxembourg, and is the second feature film by Cartoon Saloon.",
+    "rating": 8.1
+  }
+]

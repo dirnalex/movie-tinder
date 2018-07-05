@@ -1,9 +1,9 @@
-import movieFetchReducer from './movieFetchReducer';
-import movieEvaluateReducer from './movieEvaluateReducer';
+import {combineReducers} from "redux";
 
-const rootReducer = (state = {}, action) => ({
-	movieFetchReducer: movieFetchReducer(state.fetchStatus, action),
-	movieEvaluateReducer: movieEvaluateReducer(state.movies, action)
+import fetchStatus from './fetchStatus';
+import movies from './movies';
+
+export default combineReducers({
+    fetchStatus,
+    movies
 });
-
-export default rootReducer;
