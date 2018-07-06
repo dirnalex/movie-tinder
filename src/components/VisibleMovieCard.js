@@ -11,18 +11,18 @@ const mapStateToProps = state => {
         rating: movieShown ? movieShown.rating : null,
         imageURL: movieShown ? movieShown.imageURL : '',
         summary: movieShown ? movieShown.summary : null,
-        accepted: movieShown ? movieShown.accepted : false,
-        rejected: movieShown ? movieShown.rejected : false
+        acceptButtonLabel: movieShown ? (movieShown.accepted ? 'Accept again' : 'Accept') : 'Accept',
+        rejectButtonLabel: movieShown ? (movieShown.rejected ? 'Reject again' : 'Reject') : 'Reject'
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
         acceptHandler: id => {
-            dispatch(acceptMovie(id))
+            dispatch(acceptMovie(id));
         },
         rejectHandler: id => {
-            dispatch(rejectMovie(id))
+            dispatch(rejectMovie(id));
         }
     };
 };

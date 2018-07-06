@@ -4,9 +4,65 @@ body {
 .button {
   cursor: pointer; }
 
+.loadingIcon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 50px;
+  -webkit-animation-name: spin;
+  -webkit-animation-duration: 3000ms;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-name: spin;
+  -moz-animation-duration: 3000ms;
+  -moz-animation-iteration-count: infinite;
+  -moz-animation-timing-function: linear;
+  -ms-animation-name: spin;
+  -ms-animation-duration: 3000ms;
+  -ms-animation-iteration-count: infinite;
+  -ms-animation-timing-function: linear;
+  animation-name: spin;
+  animation-duration: 3000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; }
+  .loadingIcon svg {
+    vertical-align: unset !important; }
+
+@-ms-keyframes spin {
+  .loadingIcon from {
+    -ms-transform: rotate(0deg); }
+  .loadingIcon to {
+    -ms-transform: rotate(360deg); } }
+
+@-moz-keyframes spin {
+  from {
+    -moz-transform: rotate(0deg); }
+  to {
+    -moz-transform: rotate(360deg); } }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(0deg); }
+  to {
+    -webkit-transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg); }
+  to {
+    transform: rotate(360deg); } }
+
 body {
   font-family: Verdana, sans-serif;
   background-color: black; }
+
+.errorMessage {
+  color: white; }
+
+.loadingIcon {
+  color: white; }
 
 .MovieCard {
   background-color: #636363; }
@@ -15,19 +71,21 @@ body {
   color: #dcdcdc; }
 
 .movieImg {
-  border-color: #e4e4e4; }
+  border-color: #e4e4e4;
+  color: #e4e4e4; }
 
 .movieSummary {
   color: #e4e4e4; }
 
 .button {
-  color: white; }
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(38, 38, 38, 0.8); }
 
 .acceptButton {
-  background-color: #003800; }
+  color: green; }
 
 .rejectButton {
-  background-color: #670000; }
+  color: #ff2700; }
 
 .MovieCard {
   max-width: 500px;
@@ -60,16 +118,22 @@ body {
       margin: auto;
       font-size: 20px; }
       .MovieCard .fixedContent .buttonContainer .button {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
         display: inline-block;
-        width: 45%;
-        height: 20px;
-        padding-top: 12px;
-        padding-bottom: 18px; }
+        width: 50%;
+        height: 50px;
+        padding-top: 12px; }
       .MovieCard .fixedContent .buttonContainer .acceptButton {
         padding-left: 5%;
+        border-right-width: 1px;
+        border-right-style: solid;
         text-align: left; }
       .MovieCard .fixedContent .buttonContainer .rejectButton {
         padding-right: 5%;
+        border-left-width: 1px;
+        border-left-style: solid;
         text-align: right; }
 
 .MovieHeader {

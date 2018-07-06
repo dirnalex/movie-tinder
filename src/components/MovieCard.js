@@ -5,16 +5,15 @@ import MovieHeader from './MovieHeader';
 import AcceptIcon from 'react-icons/lib/md/done';
 import RejectIcon from 'react-icons/lib/md/clear';
 
-const MovieCard = ({id, title, rating, imageURL, summary, accepted, rejected, acceptHandler, rejectHandler}) => {
+const MovieCard = ({id, title, rating, imageURL, summary, acceptButtonLabel, rejectButtonLabel,
+                       acceptHandler, rejectHandler}) => {
     window.scrollTo(0, 0);
-    const acceptButtonLabel = accepted ? 'Accept again' : 'Accept';
-    const rejectButtonLabel = rejected ? 'Reject again' : 'Reject';
     return (
         <Swipeable onSwipedRight={() => rejectHandler(id)} onSwipedLeft={() => rejectHandler(id)}>
             <div className="MovieCard">
                 <div className="scrolledContent">
                     <MovieHeader title={title} rating={rating}/>
-                    <img className="movieImg" src={imageURL}/>
+                    <img className="movieImg" src={imageURL} alt="Loading failed =("/>
                     <p className="movieSummary">{summary ? summary : 'Summary placeholder'}</p>
                 </div>
                 <div className="fixedContent">

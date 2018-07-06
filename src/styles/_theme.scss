@@ -3,6 +3,14 @@ body {
   background-color: black;
 }
 
+.errorMessage {
+  color: white;
+}
+
+.loadingIcon {
+  color: white;
+}
+
 .MovieCard {
   background-color: #636363;
 }
@@ -13,6 +21,7 @@ body {
 
 .movieImg {
   border-color: #e4e4e4;
+  color: #e4e4e4;
 }
 
 .movieSummary {
@@ -20,13 +29,14 @@ body {
 }
 
 .button {
-  color: white;
+  background-color: rgba(0, 0, 0, 0.8);
+  border-color: rgba(38, 38, 38, 0.8);
 }
 
 .acceptButton {
-  background-color: #003800;
+  color: green;
 }
 
 .rejectButton {
-  background-color: #670000;
+  color: #ff2700;
 }

@@ -16,11 +16,21 @@ export default function movies(state = [], action) {
     }
 };
 
-const acceptMovie = (movies, id) =>
-    insertPropertiesToArrayConditionally(movies, movie => movie.id === id, {accepted: true, rejected: false});
+const acceptMovie = (movies, id) => {
+    imitatePut(`/recommendations/${id}/accept`);
+    return insertPropertiesToArrayConditionally(movies, movie => movie.id === id, {accepted: true, rejected: false});
+};
 
-const rejectMovie = (movies, id) =>
-    insertPropertiesToArrayConditionally(movies, movie => movie.id === id, {accepted: false, rejected: true});
+const rejectMovie = (movies, id) => {
+    imitatePut(`/recommendations/${id}/reject`);
+    return insertPropertiesToArrayConditionally(movies, movie => movie.id === id, {accepted: false, rejected: true});
+};
+
+const imitatePut = (url) =>
+    fetch(url, {method: 'PUT'})
+        .then(response => response.json())
+        .catch(error => console.error('Error:', error))
+        .then(response => console.log('Success:', response));
 
 const insertPropertiesToArrayConditionally = (array, conditionFunction, properties) =>
     array.map(el => {
