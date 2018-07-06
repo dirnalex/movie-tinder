@@ -1,26 +1,76 @@
+body {
+  margin: 5px; }
+
+.button {
+  cursor: pointer; }
+
+body {
+  font-family: Verdana, sans-serif;
+  background-color: black; }
+
+.MovieCard {
+  background-color: #636363; }
+
+.MovieHeader {
+  color: #dcdcdc; }
+
+.movieImg {
+  border-color: #e4e4e4; }
+
+.movieSummary {
+  color: #e4e4e4; }
+
+.button {
+  color: white; }
+
+.acceptButton {
+  background-color: #003800; }
+
+.rejectButton {
+  background-color: #670000; }
+
 .MovieCard {
   max-width: 500px;
-  margin: auto; }
+  margin: auto;
+  border-radius: 15px; }
   .MovieCard .scrolledContent {
-    margin-bottom: 50px; }
-    .MovieCard .scrolledContent h1 {
-      text-align: center; }
-    .MovieCard .scrolledContent img {
-      width: 100%; }
-    .MovieCard .scrolledContent p {
+    padding-bottom: 45px; }
+    .MovieCard .scrolledContent .MovieHeader {
+      margin: 0 0 20px 0;
+      padding: 20px 20px 0 20px; }
+    .MovieCard .scrolledContent .movieImg {
+      display: block;
+      width: 90%;
+      margin: auto;
+      border-width: 6px;
+      border-style: solid;
+      border-radius: 5px; }
+    .MovieCard .scrolledContent .movieSummary {
+      margin: 20px 30px;
       text-align: justify; }
-  .MovieCard .footer {
+  .MovieCard .fixedContent {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: white;
     height: 50px; }
-    .MovieCard .footer .ButtonContainer {
+    .MovieCard .fixedContent .buttonContainer {
       max-width: 500px;
+      height: 50px;
       margin: auto;
-      font-size: 32px;
-      display: flex;
-      justify-content: space-between; }
-      .MovieCard .footer .ButtonContainer svg {
-        vertical-align: text-bottom; }
+      font-size: 20px; }
+      .MovieCard .fixedContent .buttonContainer .button {
+        display: inline-block;
+        width: 45%;
+        height: 20px;
+        padding-top: 12px;
+        padding-bottom: 18px; }
+      .MovieCard .fixedContent .buttonContainer .acceptButton {
+        padding-left: 5%;
+        text-align: left; }
+      .MovieCard .fixedContent .buttonContainer .rejectButton {
+        padding-right: 5%;
+        text-align: right; }
+
+.MovieHeader {
+  text-align: center; }

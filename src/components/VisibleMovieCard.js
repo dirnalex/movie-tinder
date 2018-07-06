@@ -10,7 +10,9 @@ const mapStateToProps = state => {
         title: movieShown ? movieShown.title : null,
         rating: movieShown ? movieShown.rating : null,
         imageURL: movieShown ? movieShown.imageURL : '',
-        summary: movieShown ? movieShown.summary : null
+        summary: movieShown ? movieShown.summary : null,
+        accepted: movieShown ? movieShown.accepted : false,
+        rejected: movieShown ? movieShown.rejected : false
     };
 };
 

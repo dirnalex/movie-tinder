@@ -5,7 +5,7 @@ const MovieHeader = ({title, rating}) => {
         ` (${rating}/10)` :
         '';
     return (
-        <h1>{title ? title : 'Title placeholder'}{ratingString}</h1>
+        <h1 className="MovieHeader">{title ? title : 'Title placeholder'}{ratingString}</h1>
     )
 };
 

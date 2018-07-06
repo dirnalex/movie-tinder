@@ -1,36 +1,62 @@
-$footer-height: 50px;
-$content-max-width: 500px;
+@import "../variables";
 
 .MovieCard {
   max-width: $content-max-width;
   margin: auto;
+  border-radius: 15px;
+
   .scrolledContent {
-    margin-bottom: $footer-height;
-    h1 {
-      text-align: center;
+    padding-bottom: $footer-height - $body-margin;
+
+    .MovieHeader {
+      margin: 0 0 $gap-between-elements 0;
+      padding: $card-padding $card-padding 0 $card-padding;
     }
-    img {
-      width: 100%;
+
+    .movieImg {
+      display: block;
+      width: 90%;
+      margin: auto;
+      border-width: 6px;
+      border-style: solid;
+      border-radius: 5px;
     }
-    p {
+
+    .movieSummary {
+      margin: $gap-between-elements $card-padding + 10px;
       text-align: justify;
     }
   }
-  .footer {
+
+  .fixedContent {
     position: fixed;
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: white;
     height: $footer-height;
-    .ButtonContainer {
+
+    .buttonContainer {
       max-width: $content-max-width;
+      height: $footer-height;
       margin: auto;
-      font-size: 32px;
-      display: flex;
-      justify-content: space-between;
-      svg {
-        vertical-align: text-bottom;
+      font-size: $footer-font-size;
+
+      .button {
+        display: inline-block;
+        width: 45%;
+        height: $footer-font-size;
+        padding-top: ($footer-height - $footer-font-size) * 0.4;
+        padding-bottom: ($footer-height - $footer-font-size) * 0.6;
+      }
+
+      .acceptButton {
+        padding-left: 5%;
+        text-align: left;
+      }
+
+      .rejectButton {
+        padding-right: 5%;
+        text-align: right;
       }
     }
   }

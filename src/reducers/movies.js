@@ -25,24 +25,21 @@ const rejectMovie = (movies, id) =>
 const insertPropertiesToArrayConditionally = (array, conditionFunction, properties) =>
     array.map(el => {
         if (conditionFunction(el)) {
-            return {
-                ...el,
-                ...properties
-            };
+            return {...el, ...properties};
         } else {
-            return {
-                ...el
-            };
+            return {...el};
         }
     });
 
 const showNext = (movies) => {
-    if (movies.empty()) {return [];}
+    if (movies.length === 0) {return [];}
     let currentShownIndex = -1;
-    const moviesClearedOfShown = movies.forEach((movie, index) => {
+    const moviesClearedOfShown = movies.map((movie, index) => {
         if (movie.shown) {
             currentShownIndex = index;
-            delete movie.shown;
+            return {...movie, shown: false};
+        } else {
+            return {...movie};
         }
     });
     const nextShownIndex = currentShownIndex < moviesClearedOfShown.length - 1 ? ++currentShownIndex : 0;
