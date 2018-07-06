@@ -5,8 +5,10 @@ import MovieHeader from './MovieHeader';
 import AcceptIcon from 'react-icons/lib/md/done';
 import RejectIcon from 'react-icons/lib/md/clear';
 
-const MovieCard = ({id, title, rating, imageURL, summary, acceptButtonLabel, rejectButtonLabel,
-                       acceptHandler, rejectHandler}) => {
+const MovieCard = ({
+                       id, title, rating, imageURL, summary, acceptButtonLabel, rejectButtonLabel,
+                       acceptHandler, rejectHandler
+                   }) => {
     window.scrollTo(0, 0);
     return (
         <Swipeable onSwipedRight={() => rejectHandler(id)} onSwipedLeft={() => rejectHandler(id)}>

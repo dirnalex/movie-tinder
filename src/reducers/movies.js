@@ -42,7 +42,9 @@ const insertPropertiesToArrayConditionally = (array, conditionFunction, properti
     });
 
 const showNext = (movies) => {
-    if (movies.length === 0) {return [];}
+    if (movies.length === 0) {
+        return [];
+    }
     let currentShownIndex = -1;
     const moviesClearedOfShown = movies.map((movie, index) => {
         if (movie.shown) {

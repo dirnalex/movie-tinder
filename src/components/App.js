@@ -17,7 +17,7 @@ class App extends Component {
         }
 
         if (loading) {
-            return <div className="loadingIcon"><LoadingIcon /></div>;
+            return <div className="loadingIcon"><LoadingIcon/></div>;
         }
 
         return <VisibleMovieCard/>;
