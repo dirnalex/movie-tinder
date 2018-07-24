@@ -36,3 +36,9 @@ or /recommendations/<id>/rejectURL.
 	- React or Angular
 	- Redux
 - SASS
+
+## Installation
+```
+npm install
+npm start
+```
